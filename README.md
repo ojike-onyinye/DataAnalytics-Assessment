@@ -82,12 +82,6 @@ The repository for Cowrywise Data Analyst Technical Assessment.
 - **Multiple Plan Types:**  
   Since a plan can be either savings or investment, I used two separate SELECTs and combined them with `UNION ALL` for clarity in labeling.
 
----
-
-### Outcome
-
-A reliable SQL query that surfaces all active plans with over one year of inactivity — enabling proactive alerts by the operations team.
-
 
 
 
@@ -122,12 +116,5 @@ A reliable SQL query that surfaces all active plans with over one year of inacti
 - **Zero Transactions or Zero Tenure:**  
   Had to carefully guard against division by zero, especially for new customers or those with no activity, using `IF`, `IFNULL`, and `NULLIF`.
 
-- **Simplifying Business Logic:**  
-  Kept the CLV model as requested — basic and transaction-based — without overcomplicating with costs or retention curves.
 
----
-
-### Outcome
-
-An effective, business-friendly query to estimate and rank customer value, enabling better targeting for retention and upselling.
 
