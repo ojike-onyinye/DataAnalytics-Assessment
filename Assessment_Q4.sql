@@ -37,7 +37,6 @@ FROM (
     LEFT JOIN 
         savings_savingsaccount s 
         ON u.id = s.owner_id 
-        AND s.transaction_status IN ('monnify_success','success','successful')
 
     GROUP BY 
         u.id, u.first_name, u.last_name, u.created_on
